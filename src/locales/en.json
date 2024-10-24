@@ -1,0 +1,28 @@
+{
+  "save": "Save",
+  "close": "Close",
+  "confirm": "Confirm",
+  "edit": "Edit",
+  "userinfo": {
+    "anonymouse": "Anonymouse",
+    "signUp": "Sign Up",
+    "signIn": "User Login",
+    "signOut": "Logout",
+    "info": "User Information",
+    "email": "Email",
+    "username": "User Name*",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "required": "Required.",
+    "emailinvalid": "E-mail must be valid.",
+    "loginButton": "Login",
+    "loading": "Loading...",
+    "failure": "Please check your email and password, then try logging in.",
+    "signup": {
+      "hit": "Maximum limit of 20 characters",
+      "min_length": "Password must be at least {min} characters long.",
+      "indicates_required_field": "*indicates required field",
+      "loading": "Loading..."
+    }
+  }
+}

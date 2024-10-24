@@ -1,0 +1,29 @@
+{
+  "save": "저장",
+  "close": "닫기",
+  "confirm": "확인",
+  "edit": "수정",
+  "userinfo": {
+    "anonymouse": "익명",
+    "signUp": "회원 가입",
+    "signIn": "로그인",
+    "signOut": "로그아웃",
+    "email": "이메일*",
+    "info": "회원 정보",
+    "username": "사용자 이름*",
+    "password": "비밀번호*",
+    "confirm_password": "비밀번호 재확인*",
+    "required": "필수 입력 사항입니다.",
+    "emailinvalid": "유효한 이메일 주소여야 합니다.",
+    "loginButton": "접속",
+    "loading": "접속중..",
+    "failure": "이메일과 비밀번호를 확인해서 로그인 시도해주세요.",
+    "signup": {
+      "hit": "최대 20글자 까지 제한",
+      "passwords_match": "비밀번호가 일치하지 않습니다.",
+      "min_length": "비밀번호는 최소 {min}자 이상이어야 합니다",
+      "indicates_required_field": "*필수 입력 항목",
+      "loading": "사용자 가입.."
+    }
+  }
+}

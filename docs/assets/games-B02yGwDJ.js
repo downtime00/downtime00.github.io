@@ -1,0 +1,1 @@
+import{_ as s,g as n}from"./AppFooter-B3wdZvwr.js";import{j as t,h as a,e as r,F as c,o as _}from"./index-k-PWP_ZS.js";const m={};function p(f,e){const o=n;return _(),t(c,null,[e[0]||(e[0]=a("div",{class:"v-"},"sdfasdf",-1)),r(o)],64)}const i=s(m,[["render",p]]);export{i as default};
