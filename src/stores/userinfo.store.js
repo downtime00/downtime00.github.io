@@ -1,14 +1,13 @@
 import { ref } from 'vue';
 import { defineStore } from 'pinia';
 import { jwtDecode } from 'jwt-decode';
-import Cookies from 'js-cookie';
 import { ApiService } from '@/services/api.service';
 import { UserinfoService } from '@/services/userinfo.service';
 import { useI18n } from "vue-i18n";
 
 export const userinfoStore = defineStore('userinfo', () => {
   const { t } = useI18n();
-  const access_token = ref(Cookies.get('accessToken'));
+  const access_token = ref(sessionStorage.getItem('accessToken'));
   const csrf_token = ref('');
   const instance_id = ref('')
   const username = ref(t("userinfo.anonymouse"));
@@ -39,7 +38,8 @@ export const userinfoStore = defineStore('userinfo', () => {
 
   const setAccessToken = (token) => {
     updateAccessdata(token);
-    Cookies.set('accessToken', token, { expires: access_iat.value, sameSite: 'none' });
+    sessionStorage.setItem('accessToken', token);
+    ApiService.setAccessToken(token);
   }
 
   const setCSRFToken = (token) => {
@@ -52,6 +52,7 @@ export const userinfoStore = defineStore('userinfo', () => {
     instance_id.value = '';
     username.value = t("userinfo.anonymouse");
     access_iat.value = null;
+    sessionStorage.clear();
   }
 
   const signUp = async (username, email, password) => {
