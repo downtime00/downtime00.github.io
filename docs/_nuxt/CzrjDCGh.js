@@ -1,0 +1,1 @@
+import{z as u}from"./CIHDqD5h.js";const t=["user","lecture","care"],r="ieum_user_type",s=u("user"),o=e=>{s.value=t.includes(e)?e:"user",localStorage.setItem(r,s.value)},a=()=>{const e=localStorage.getItem(r);e&&t.includes(e)&&(s.value=e)},l=()=>({userType:s,setUserType:o});export{a as i,l as u};
