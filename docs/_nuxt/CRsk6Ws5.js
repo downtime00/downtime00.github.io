@@ -1,0 +1,1 @@
+import{c as e,o as t}from"./Bm21awt3.js";var n=t(t=>{let n=localStorage.getItem(`accessToken`),r=!1;try{let e=JSON.parse(localStorage.getItem(`user`)||`null`);r=!!n&&!!e&&[`ADMIN`,`SUPER_ADMIN`].includes(e.role)}catch{}if(!r)return e(`/dashboard`)});export{n as default};
