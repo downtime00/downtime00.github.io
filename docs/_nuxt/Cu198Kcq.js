@@ -1,0 +1,1 @@
+import{ft as e,q as t,tt as n}from"./UJ3UCcIg.js";var r=`seniorMode`,i=e(!1),a=e=>{document.documentElement.classList.toggle(`senior-mode`,e)},o=()=>(t(()=>{!i.value&&localStorage.getItem(r)===`true`&&(i.value=!0,a(!0))}),n(i,e=>a(e)),{enabled:i,toggle:()=>{i.value=!i.value,localStorage.setItem(r,String(i.value)),a(i.value)}});export{o as t};
